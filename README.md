@@ -1,13 +1,16 @@
-# CodeAlpha Network Sniffer 🔍
+<div align="center">
+
+# Network Sniffer
 
 A professional network packet capture and analysis tool built with Python and Scapy. This project demonstrates core cybersecurity concepts including network traffic analysis, protocol dissection, and packet inspection.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![Scapy](https://img.shields.io/badge/Scapy-2.5%2B-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![CodeAlpha](https://img.shields.io/badge/CodeAlpha-Internship-red)
 
-## 📋 Table of Contents
+</div>
+
+##  Table of Contents
 
 - [Features](#-features)
 - [Requirements](#-requirements)
@@ -18,7 +21,7 @@ A professional network packet capture and analysis tool built with Python and Sc
 - [How It Works](#-how-it-works)
 - [License](#-license)
 
-## ✨ Features
+##  Features
 
 - **Real-Time Packet Capture** — Capture live network traffic using Scapy's powerful sniffing engine
 - **Multi-Layer Protocol Analysis** — Deep inspection of:
@@ -33,7 +36,7 @@ A professional network packet capture and analysis tool built with Python and Sc
 - **Comprehensive Statistics** — Protocol distribution, top IPs, packets/sec, and more
 - **Memory-Efficient** — Callback-based architecture prevents memory exhaustion
 
-## 📦 Requirements
+##  Requirements
 
 | Requirement | Details |
 |---|---|
@@ -42,7 +45,7 @@ A professional network packet capture and analysis tool built with Python and Sc
 | Privileges | Administrator/root required for packet capture |
 | Npcap | Required on Windows — [Download here](https://npcap.com/) |
 
-## 🚀 Installation
+##  Installation
 
 ```bash
 # 1. Clone the repository
@@ -58,7 +61,7 @@ source venv/bin/activate        # Linux/macOS
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
+##  Usage
 
 > **⚠ Important:** Run the terminal as **Administrator** (Windows) or with `sudo` (Linux/macOS).
 
@@ -132,7 +135,7 @@ You can also use any custom BPF expression:
 python -m sniffer.main -f "host 192.168.1.1 and tcp port 443"
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 CodeAlpha_NetworkSniffer/
@@ -148,7 +151,7 @@ CodeAlpha_NetworkSniffer/
 └── output/                    # Exported capture files
 ```
 
-## 🔧 How It Works
+##  How It Works
 
 1. **Capture Engine** (`capture.py`): Uses Scapy's `sniff()` with a callback function for real-time processing. Packets are captured using raw sockets, requiring elevated privileges.
 
@@ -160,12 +163,11 @@ CodeAlpha_NetworkSniffer/
 
 5. **Export System** (`export.py`): Captured data can be exported to multiple formats for further analysis in tools like Wireshark (PCAP), Excel (CSV), or custom scripts (JSON).
 
-## ⚖ License
+##  License
 
-This project is part of the **CodeAlpha Cybersecurity Internship** program.
+This project is licensed under the MIT License.
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [Scapy](https://scapy.net/) — Powerful packet manipulation library
 - [Rich](https://rich.readthedocs.io/) — Beautiful terminal formatting
-- [CodeAlpha](https://www.codealpha.tech/) — Internship program
