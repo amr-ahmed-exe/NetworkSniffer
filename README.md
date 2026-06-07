@@ -139,7 +139,6 @@ CodeAlpha_NetworkSniffer/
 ├── README.md                  # Project documentation
 ├── requirements.txt           # Python dependencies
 ├── sniffer/
-│   ├── __init__.py           # Package metadata
 │   ├── main.py               # CLI entry point (argparse)
 │   ├── capture.py            # Packet capture engine (scapy.sniff)
 │   ├── analyzer.py           # Deep packet inspection & statistics
