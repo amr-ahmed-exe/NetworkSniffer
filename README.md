@@ -165,7 +165,7 @@ CodeAlpha_NetworkSniffer/
 
 ##  License
 
-This project is licensed under the MIT License.
+Copyright © 2026 **Amr Ahmed**. All Rights Reserved.
 
 ##  Acknowledgements
 
